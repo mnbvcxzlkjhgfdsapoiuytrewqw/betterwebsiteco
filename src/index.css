@@ -1,0 +1,107 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, monospace;
+
+  --color-accent: #B7FF3C;
+  --color-accent-dim: #9FE62E;
+}
+
+:root {
+  --bg: #0B0B0B;
+  --bg-elevated: #131313;
+  --text-primary: #FFFFFF;
+  --text-secondary: #BDBDBD;
+  --text-muted: #828282;
+  --border: rgba(255, 255, 255, 0.09);
+  --border-strong: rgba(255, 255, 255, 0.18);
+  --card: #111111;
+  --accent: #B7FF3C;
+  --accent-text: #0B0B0B;
+  --shadow: rgba(0, 0, 0, 0.4);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #FAFAFA;
+  --bg-elevated: #FFFFFF;
+  --text-primary: #111111;
+  --text-secondary: #5B5B5B;
+  --text-muted: #6B6B6B;
+  --border: rgba(0, 0, 0, 0.08);
+  --border-strong: rgba(0, 0, 0, 0.16);
+  --card: #FFFFFF;
+  --accent: #86C412;
+  --accent-text: #0B0B0B;
+  --shadow: rgba(0, 0, 0, 0.06);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 320ms ease, color 320ms ease;
+}
+
+body,
+button,
+a,
+input,
+textarea {
+  transition: background-color 280ms ease, color 280ms ease, border-color 280ms ease, box-shadow 280ms ease;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.container-bw {
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+@media (min-width: 768px) {
+  .container-bw {
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
