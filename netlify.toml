@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Belt-and-suspenders: public/_redirects handles this too, but that file
+# has gone missing once already without anyone noticing until a route
+# broke. Keeping the same rule here means the SPA fallback survives even
+# if _redirects gets dropped again.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

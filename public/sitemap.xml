@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  IMPORTANT: replace REPLACE-WITH-YOUR-DOMAIN.com below with the real
+  domain before this does anything useful. /meet-bee is deliberately left
+  out — it's meant to be found by curious visitors, not search engines
+  (robots.txt disallows it too, for the same reason).
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/</loc>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/partners</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/websites-that-sell</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/business-websites</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/event-websites</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/website-redesign</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/funnel-pages</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/landing-pages</loc>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://REPLACE-WITH-YOUR-DOMAIN.com/campaigns/book-launch</loc>
+    <priority>0.6</priority>
+  </url>
+</urlset>
