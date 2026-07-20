@@ -13,20 +13,19 @@ export default function Hero() {
         >
           <p className="eyebrow mb-6">Better Website Co.</p>
           <h1
-            className="font-display font-semibold leading-[0.98] tracking-tight text-[48px] sm:text-[64px] lg:text-[80px]"
+            className="font-display font-semibold leading-[0.98] tracking-tight text-[46px] sm:text-[60px] lg:text-[74px]"
             style={{ color: 'var(--text-primary)' }}
           >
-            Your Instagram
+            Your website is either
             <br />
-            <span className="italic font-normal" style={{ color: 'var(--accent)' }}>isn't your business.</span>
+            selling for you, <span className="italic font-normal" style={{ color: 'var(--accent)' }}>or costing you.</span>
           </h1>
           <p
             className="mt-7 text-lg max-w-md"
             style={{ color: 'var(--text-secondary)' }}
           >
-            It's borrowed space on someone else's platform. We build the website that's actually
-            yours — the one that turns visitors into customers, whether or not the algorithm
-            cooperates today.
+            Whether you don't have one yet, or yours isn't pulling its weight — we build the
+            version that actually turns visitors into customers.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button href="#inquiry" variant="primary">
