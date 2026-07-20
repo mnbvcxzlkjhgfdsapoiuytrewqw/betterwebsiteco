@@ -4,6 +4,7 @@ import { ThemeProvider } from './context/ThemeContext'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import SocialProof from './components/SocialProof'
+import Philosophy from './components/Philosophy'
 import Transformations from './components/Transformations'
 import Credibility from './components/Credibility'
 import Process from './components/Process'
@@ -36,6 +37,7 @@ function Home() {
       <main>
         <Hero />
         <SocialProof />
+        <Philosophy />
         <Transformations />
         <Credibility />
         <Process />

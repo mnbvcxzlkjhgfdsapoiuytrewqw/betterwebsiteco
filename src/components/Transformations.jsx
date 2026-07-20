@@ -71,9 +71,9 @@ export default function Transformations() {
     <section id="transformations" className="py-24 border-t" style={{ borderColor: 'var(--border)' }}>
       <div className="container-bw">
         <div className="max-w-xl mb-14">
-          <p className="eyebrow mb-4">Not portfolio. Transformations.</p>
+          <p className="eyebrow mb-4">Not a portfolio. Proof.</p>
           <h2 className="font-display text-3xl md:text-4xl" style={{ color: 'var(--text-primary)' }}>
-            Website Transformations
+            Real businesses. Real transformations.
           </h2>
         </div>
         <div className="flex flex-col gap-6">

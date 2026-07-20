@@ -2,10 +2,10 @@ export const tiers = [
   {
     id: 'launch',
     name: 'Launch',
-    for: 'Best for businesses getting online for the first time.',
+    for: 'For businesses ready to stop renting their online presence.',
     price: 'Starting from ₦50,000',
     description:
-      'Perfect for startups, personal brands, events and businesses launching their online presence.',
+      'A real website — not a template — for startups, personal brands, events and businesses launching online for the first time.',
     examples: ['Landing Pages', 'One-page Websites', 'Portfolio Websites', 'Event Websites'],
     cta: 'Get Started',
     featured: false,
@@ -14,10 +14,10 @@ export const tiers = [
     id: 'growth',
     name: 'Growth',
     badge: 'Most Popular',
-    for: 'Best for businesses ready to generate more enquiries.',
+    for: 'For businesses ready to turn visitors into enquiries.',
     price: 'Starting from ₦180,000',
     description:
-      'Designed for businesses ready to build trust, generate enquiries and grow online.',
+      'Built for businesses ready to be found, trusted, and chosen — without depending on an algorithm to get there.',
     examples: ['Business Websites', 'Service Companies', 'Fashion Brands', 'Schools', 'Restaurants', 'Corporate Websites'],
     cta: 'Book a Strategy Call',
     featured: true,
@@ -25,10 +25,10 @@ export const tiers = [
   {
     id: 'scale',
     name: 'Scale',
-    for: 'Best for businesses needing a custom digital solution.',
+    for: 'For businesses that have outgrown a standard website.',
     price: 'Custom Quote',
     description:
-      'For businesses with unique goals or advanced functionality built specifically around their requirements.',
+      'A custom platform built around what your business actually needs — not what a template allows.',
     examples: ['E-commerce', 'Booking Systems', 'CBT Platforms', 'Customer Dashboards', 'Membership Sites', 'Custom Web Applications', 'AI Integrations'],
     cta: "Let's Talk",
     featured: false,
@@ -38,7 +38,7 @@ export const tiers = [
 export const faqs = [
   {
     q: 'Why do I need a website if I already use Instagram or WhatsApp?',
-    a: 'Social media helps people discover your business. A website helps them trust you, learn more about what you offer, and take action.',
+    a: "Because you don't own Instagram or WhatsApp — you're borrowing space on someone else's platform. A website is the one part of your business online that's actually yours, and the first place serious customers check before they trust you.",
   },
   {
     q: 'How much does a website cost?',
@@ -54,7 +54,7 @@ export const faqs = [
   },
   {
     q: 'Will my website work on mobile devices?',
-    a: 'Absolutely. Every website we build is fully responsive and optimized for mobile, tablet, and desktop.',
+    a: "Yes — most of your visitors will meet you on a phone before they ever open a laptop, so every site is designed for that screen first, then scaled up.",
   },
   {
     q: 'Can you redesign my existing website?',
@@ -90,6 +90,6 @@ export const faqs = [
   },
   {
     q: 'What makes Better Website Co. different?',
-    a: "We don't just build beautiful websites — we create websites that build trust, remove buying friction, and help turn visitors into customers.",
+    a: "Most agencies sell you a website. We think about what happens after — the enquiry that comes in at 11pm, the customer who Googles you before replying to your DM. Every site we build exists to make that moment work in your favor.",
   },
 ]

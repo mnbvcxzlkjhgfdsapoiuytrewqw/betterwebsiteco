@@ -13,11 +13,11 @@ export default function Pricing({ onSelect }) {
         <div className="max-w-xl mb-14">
           <p className="eyebrow mb-4">Pricing</p>
           <h2 className="font-display text-3xl md:text-4xl mb-4" style={{ color: 'var(--text-primary)' }}>
-            Ways We Can Work Together
+            Three ways to own your online presence.
           </h2>
           <p style={{ color: 'var(--text-secondary)' }}>
-            Every business is different. Choose the solution that best fits where you are today.
-            Every project is tailored to your goals.
+            Every business is at a different stage. Choose the starting point that matches yours —
+            every project investment is scoped to your actual goals, not a fixed template.
           </p>
         </div>
 

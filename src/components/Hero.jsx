@@ -13,25 +13,27 @@ export default function Hero() {
         >
           <p className="eyebrow mb-6">Better Website Co.</p>
           <h1
-            className="font-display font-semibold leading-[0.98] tracking-tight text-[56px] sm:text-[72px] lg:text-[92px]"
+            className="font-display font-semibold leading-[0.98] tracking-tight text-[48px] sm:text-[64px] lg:text-[80px]"
             style={{ color: 'var(--text-primary)' }}
           >
-            Websites
+            Your Instagram
             <br />
-            <span className="italic font-normal" style={{ color: 'var(--accent)' }}>That Sell.</span>
+            <span className="italic font-normal" style={{ color: 'var(--accent)' }}>isn't your business.</span>
           </h1>
           <p
             className="mt-7 text-lg max-w-md"
             style={{ color: 'var(--text-secondary)' }}
           >
-            Premium websites designed to turn visitors into paying customers.
+            It's borrowed space on someone else's platform. We build the website that's actually
+            yours — the one that turns visitors into customers, whether or not the algorithm
+            cooperates today.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button href="#inquiry" variant="primary">
               Book a Free Strategy Call
             </Button>
             <Button href="#transformations" variant="secondary">
-              View Transformations
+              See What We've Built
             </Button>
           </div>
         </motion.div>

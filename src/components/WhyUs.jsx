@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion'
 
 const POINTS = [
-  { title: 'Build instant trust', copy: 'Visitors decide in seconds whether to take you seriously. We design for that second.' },
-  { title: 'Convert more visitors', copy: 'Every layout choice removes friction between interest and enquiry.' },
-  { title: 'Mobile-first', copy: 'Most of your customers will meet you on a phone. So do we, first.' },
-  { title: 'Lightning fast', copy: 'A slow site loses customers before they ever see what you offer.' },
-  { title: 'SEO-ready', copy: 'Structured to be found, not just to look good once someone arrives.' },
-  { title: 'Easy to manage', copy: 'You should be able to update your own site without calling us.' },
+  { title: 'Trusted in seconds', copy: 'Visitors decide in seconds whether to take you seriously. We design for that second.' },
+  { title: 'Built to convert', copy: 'Every layout choice removes friction between interest and enquiry.' },
+  { title: 'Meets people on their phone', copy: 'Most of your customers will find you on mobile. So does your site, first.' },
+  { title: 'Loads before they leave', copy: 'A slow site loses customers before they ever see what you offer.' },
+  { title: 'Built to be found', copy: 'Structured for Google, not just for looking good once someone already arrives.' },
+  { title: 'Yours to update', copy: 'You should be able to update your own site without calling us.' },
 ]
 
 export default function WhyUs() {
@@ -16,7 +16,7 @@ export default function WhyUs() {
         <div className="max-w-xl mb-14">
           <p className="eyebrow mb-4">Why Better Website Co.</p>
           <h2 className="font-display text-3xl md:text-4xl" style={{ color: 'var(--text-primary)' }}>
-            Designed around your customers.
+            A website is a first impression. We design for that moment.
           </h2>
         </div>
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
