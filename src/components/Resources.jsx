@@ -1,44 +1,66 @@
+import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { insights } from '../data/insights'
 
-const ARTICLES = [
-  { title: 'Why Your Business Needs a Website', tag: 'Foundations' },
-  { title: 'Instagram Is Not Your Website', tag: 'Strategy' },
-  { title: 'Landing Page vs Full Website', tag: 'Strategy' },
-  { title: 'How Long Does a Website Take?', tag: 'Process' },
-  { title: 'What Makes People Trust a Business Online?', tag: 'Trust' },
+// Homepage teaser for the Insights library. Shows a handful of real articles,
+// links out to the full /insights index.
+const FEATURED_SLUGS = [
+  'why-your-business-needs-a-website',
+  'instagram-is-not-your-website',
+  'first-five-seconds',
+  'real-cost-of-waiting',
 ]
 
 export default function Resources() {
+  const featured = FEATURED_SLUGS.map((slug) => insights.find((a) => a.slug === slug)).filter(Boolean)
+
   return (
-    <section id="resources" className="py-24 border-t" style={{ borderColor: 'var(--border)' }}>
+    <section id="insights" className="py-24 border-t" style={{ borderColor: 'var(--border)' }}>
       <div className="container-bw">
-        <div className="max-w-xl mb-14">
-          <p className="eyebrow mb-4">Resources</p>
-          <h2 className="font-display text-3xl md:text-4xl" style={{ color: 'var(--text-primary)' }}>
-            Learn before you build.
-          </h2>
+        <div className="max-w-xl mb-14 flex items-end justify-between gap-6 flex-wrap">
+          <div>
+            <p className="eyebrow mb-4">Insights</p>
+            <h2 className="font-display text-3xl md:text-4xl" style={{ color: 'var(--text-primary)' }}>
+              We don't just build websites. We teach businesses how to win online.
+            </h2>
+          </div>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {ARTICLES.map((a, i) => (
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          {featured.map((a, i) => (
             <motion.div
-              key={a.title}
+              key={a.slug}
               initial={{ opacity: 0, y: 16 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-60px' }}
               transition={{ duration: 0.4, delay: i * 0.06 }}
-              className="rounded-2xl border p-6"
-              style={{ borderColor: 'var(--border)', background: 'var(--card)' }}
             >
-              <p className="eyebrow mb-3">{a.tag}</p>
-              <p className="font-display text-lg leading-snug" style={{ color: 'var(--text-primary)' }}>
-                {a.title}
-              </p>
+              <Link
+                to={`/insights/${a.slug}`}
+                className="group block rounded-2xl border p-6 h-full transition-colors"
+                style={{ borderColor: 'var(--border)', background: 'var(--card)' }}
+              >
+                <p className="eyebrow mb-3" style={{ color: 'var(--accent)' }}>
+                  {a.category}
+                </p>
+                <p className="font-display text-lg leading-snug mb-3" style={{ color: 'var(--text-primary)' }}>
+                  {a.title}
+                </p>
+                <p className="text-sm" style={{ color: 'var(--text-muted)' }}>
+                  {a.readTime}
+                </p>
+              </Link>
             </motion.div>
           ))}
         </div>
-        <p className="mt-8 text-sm" style={{ color: 'var(--text-muted)' }}>
-          More coming soon.
-        </p>
+
+        <Link
+          to="/insights"
+          className="inline-block mt-8 text-sm font-medium underline underline-offset-4"
+          style={{ color: 'var(--accent)' }}
+        >
+          Read all Insights →
+        </Link>
       </div>
     </section>
   )

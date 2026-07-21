@@ -13,6 +13,7 @@ const LINKS = [
   { href: '#process', label: 'Process', homeOnly: true },
   { href: '#about', label: 'About', homeOnly: true },
   { href: '#pricing', label: 'Pricing', homeOnly: true },
+  { href: '/insights', label: 'Insights', homeOnly: false },
   { href: '/partners', label: 'Partners', homeOnly: false },
   { href: '#faq', label: 'FAQ', homeOnly: false },
 ]

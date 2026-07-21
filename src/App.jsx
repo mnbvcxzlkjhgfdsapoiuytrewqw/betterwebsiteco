@@ -13,7 +13,7 @@ import AboutFounder from './components/AboutFounder'
 import Testimonials from './components/Testimonials'
 import Pricing from './components/Pricing'
 import InquiryForm from './components/InquiryForm'
-// import Resources from './components/Resources' // re-enable once real articles are written
+import Resources from './components/Resources'
 import FAQ from './components/FAQ'
 import FinalCTA from './components/FinalCTA'
 import Footer from './components/Footer'
@@ -27,6 +27,8 @@ import FunnelPages from './pages/campaigns/FunnelPages'
 import LandingPages from './pages/campaigns/LandingPages'
 import BookLaunch from './pages/campaigns/BookLaunch'
 import Partners from './pages/Partners'
+import Insights from './pages/Insights'
+import InsightArticle from './pages/InsightArticle'
 
 function Home() {
   const [selectedTier, setSelectedTier] = useState(null)
@@ -44,9 +46,9 @@ function Home() {
         <WhyUs />
         <AboutFounder />
         <Testimonials />
+        <Resources />
         <Pricing onSelect={setSelectedTier} />
         <InquiryForm selectedTier={selectedTier} onSelectTier={setSelectedTier} />
-        {/* <Resources /> re-enable once real articles are written */}
         <FAQ />
         <FinalCTA />
       </main>
@@ -70,6 +72,8 @@ export default function App() {
           <Route path="/campaigns/landing-pages" element={<LandingPages />} />
           <Route path="/campaigns/book-launch" element={<BookLaunch />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/insights" element={<Insights />} />
+          <Route path="/insights/:slug" element={<InsightArticle />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
