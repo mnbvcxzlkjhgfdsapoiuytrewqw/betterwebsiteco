@@ -135,7 +135,7 @@ export default function Partners() {
                 {c.rewards.table.map((row, i) => (
                   <div
                     key={row.project}
-                    className="flex items-center justify-between px-6 py-4"
+                    className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 px-6 py-4"
                     style={{
                       borderTop: i === 0 ? 'none' : '1px solid var(--border)',
                       background: 'var(--card)',
