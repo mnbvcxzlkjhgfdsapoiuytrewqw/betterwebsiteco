@@ -97,7 +97,7 @@ export default function MeetBee() {
               </div>
               <Bee size="sm" animateIn={false} />
             </div>
-            <div className="grid sm:grid-cols-2 gap-6 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
               <div>
                 <p className="text-xs mb-1" style={{ color: 'var(--text-muted)' }}>Role</p>
                 <p className="text-sm" style={{ color: 'var(--text-secondary)' }}>Website Inspector</p>

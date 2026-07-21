@@ -158,7 +158,7 @@ export default function CaseStudy({ study, onClose }) {
             {/* Why this works checklist */}
             <section className="container-bw py-16 border-t" style={{ borderColor: 'var(--border)' }}>
               <Eyebrow>Why This Works</Eyebrow>
-              <div className="grid sm:grid-cols-2 gap-x-10 gap-y-4 max-w-3xl">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-10 gap-y-4 max-w-3xl">
                 {study.checklist.map((item) => (
                   <div key={item} className="flex items-start gap-3">
                     <span className="mt-1 text-sm shrink-0" style={{ color: 'var(--accent)' }}>✓</span>
@@ -224,7 +224,7 @@ export default function CaseStudy({ study, onClose }) {
             {/* Before / After */}
             <section className="container-bw py-16 border-t" style={{ borderColor: 'var(--border)' }}>
               <Eyebrow>What Changed?</Eyebrow>
-              <div className="grid md:grid-cols-2 gap-8 max-w-4xl">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
                 <div>
                   <p className="text-sm font-medium mb-4" style={{ color: 'var(--text-muted)' }}>Before</p>
                   <ul className="space-y-3">

@@ -41,7 +41,7 @@ export default function Footer() {
   return (
     <footer className="pt-20 pb-10 border-t" style={{ borderColor: 'var(--border)' }}>
       <div className="container-bw">
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-14">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 pb-14">
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-4">
               <Logo className="h-7 w-7 rounded-md" />

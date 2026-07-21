@@ -38,12 +38,12 @@ export default function BrowserMockup() {
         </div>
 
         {/* Tabs */}
-        <div className="flex items-center gap-1 ml-2">
+        <div className="flex items-center gap-1 ml-2 overflow-x-auto scrollbar-none">
           {tabs.map((t, i) => (
             <button
               key={t.id}
               onClick={() => setActive(i)}
-              className="relative px-3 py-1.5 rounded-md text-[11px] font-medium"
+              className="relative px-3 py-1.5 rounded-md text-[11px] font-medium whitespace-nowrap shrink-0"
               style={{
                 color: i === active ? 'var(--text-primary)' : 'var(--text-muted)',
                 background: i === active ? 'var(--bg)' : 'transparent',

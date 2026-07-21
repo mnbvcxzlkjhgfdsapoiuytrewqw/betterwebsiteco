@@ -19,7 +19,7 @@ export default function Process() {
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-5 gap-8 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-5 gap-8 md:gap-6">
           {STEPS.map((s, i) => (
             <motion.div
               key={s.n}

@@ -119,11 +119,11 @@ export default function InquiryForm({ selectedTier, onSelectTier }) {
                 </label>
               </div>
 
-              <div className="grid sm:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <Field label="Name" name="name" required />
                 <Field label="Business name" name="business" />
               </div>
-              <div className="grid sm:grid-cols-2 gap-5">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                 <Field label="Email" name="email" type="email" required />
                 <Field label="WhatsApp / Phone" name="phone" />
               </div>
@@ -131,7 +131,7 @@ export default function InquiryForm({ selectedTier, onSelectTier }) {
               {isScale ? (
                 <>
                   <Field label="What are you trying to achieve?" name="goals" textarea required />
-                  <div className="grid sm:grid-cols-2 gap-5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                     <Field label="Ideal timeline" name="timeline" placeholder="e.g. 6–8 weeks" />
                     <Field label="Integrations needed" name="integrations" placeholder="e.g. payments, booking" />
                   </div>

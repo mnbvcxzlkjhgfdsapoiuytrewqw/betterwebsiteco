@@ -5,7 +5,7 @@ import BrowserMockup from './BrowserMockup'
 export default function Hero() {
   return (
     <section id="top" className="relative pt-20 md:pt-28 pb-24 overflow-hidden">
-      <div className="container-bw grid md:grid-cols-2 gap-14 items-center">
+      <div className="container-bw grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
         <motion.div
           initial={{ opacity: 0, y: 24 }}
           animate={{ opacity: 1, y: 0 }}
@@ -16,9 +16,8 @@ export default function Hero() {
             className="font-display font-semibold leading-[0.98] tracking-tight text-[46px] sm:text-[60px] lg:text-[74px]"
             style={{ color: 'var(--text-primary)' }}
           >
-            Your website is either
-            <br />
-            selling for you, <span className="italic font-normal" style={{ color: 'var(--accent)' }}>or costing you.</span>
+            Your website is either selling,{' '}
+            <span className="italic font-normal" style={{ color: 'var(--accent)' }}>or costing you.</span>
           </h1>
           <p
             className="mt-7 text-lg max-w-md"

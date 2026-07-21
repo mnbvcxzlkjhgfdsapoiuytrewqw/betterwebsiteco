@@ -4,7 +4,7 @@ import founderPhoto from '../assets/founder-photo.jpg'
 export default function AboutFounder() {
   return (
     <section id="about" className="py-24 border-t" style={{ borderColor: 'var(--border)' }}>
-      <div className="container-bw grid md:grid-cols-[minmax(0,340px)_1fr] gap-14 items-start">
+      <div className="container-bw grid grid-cols-1 md:grid-cols-[minmax(0,340px)_1fr] gap-14 items-start">
         <motion.div
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}

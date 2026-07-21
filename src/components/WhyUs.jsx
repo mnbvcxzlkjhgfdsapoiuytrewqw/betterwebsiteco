@@ -19,7 +19,7 @@ export default function WhyUs() {
             A website is a first impression. We design for that moment.
           </h2>
         </div>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-12">
           {POINTS.map((p, i) => (
             <motion.div
               key={p.title}

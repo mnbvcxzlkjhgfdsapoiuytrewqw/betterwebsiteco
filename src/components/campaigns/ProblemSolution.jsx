@@ -19,7 +19,7 @@ export default function ProblemSolution({ eyebrow, headline, problem, solution }
             )}
           </div>
         )}
-        <div className="grid md:grid-cols-2 gap-8 md:gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-6">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}

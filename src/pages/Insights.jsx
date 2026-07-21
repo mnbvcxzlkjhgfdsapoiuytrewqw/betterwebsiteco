@@ -68,7 +68,7 @@ export default function Insights() {
               })}
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {filtered.map((a, i) => (
                 <motion.div
                   key={a.slug}

@@ -87,7 +87,7 @@ export default function InsightArticle() {
             {related.length > 0 && (
               <div className="mt-16">
                 <p className="eyebrow mb-6">More on {article.category}</p>
-                <div className="grid sm:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   {related.map((a) => (
                     <Link
                       key={a.slug}
